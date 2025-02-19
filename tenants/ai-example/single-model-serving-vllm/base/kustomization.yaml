@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: ai-example-single-model-serving
 
 helmCharts:
-- name: granite
-  releaseName: vllm-kserve
+- name: vllm-kserve
+  releaseName: granite
   version: 0.3.5
   repo: https://redhat-ai-services.github.io/helm-charts/
   valuesFile: values.yaml
